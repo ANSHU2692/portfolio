@@ -31,15 +31,15 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="relative mt-12 md:mt-0 md:w-1/2 flex justify-center">
-        <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-red-500">
+      <div className="relative mt-12 md:mt-0 flex justify-center max-w-sm mx-auto">
+        <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-gray-700">
           <img
             src={mypic}
             alt="Anshu Gour"
             className="object-cover w-full h-full"
           />
         </div>
-        <div className="absolute inset-0 border-4 border-red-500 rounded-full scale-110 opacity-20"></div>
+        <div className="absolute inset-0 border-4 border-red-700 rounded-full scale-110 opacity-20"></div>
       </div>
     </section>
   );

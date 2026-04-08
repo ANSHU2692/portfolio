@@ -5,7 +5,7 @@ export default function Experience() {
     {
       role: "App Developer Intern",
       company: "Serviingo Technologies Pvt. Ltd.",
-      period: "Aug 2025 – Present",
+      period: "Aug 2025 – Oct 2025",
       desc: "Developed and enhanced web and mobile apps using React, React Native, and Tailwind CSS. Worked with APIs and collaborated on UI fixes and feature enhancements.",
     },
   ];

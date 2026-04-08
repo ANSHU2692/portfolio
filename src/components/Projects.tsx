@@ -1,4 +1,5 @@
-import React from "react";
+import fantacyCricket from "../assets/fantacyCricket.png";
+import landingpage from "../assets/landing pages.png";
 
 export default function Projects() {
   const projects = [
@@ -6,11 +7,13 @@ export default function Projects() {
       title: "Fantasy Cricket Game",
       desc: "Built using Python, Qt Designer, and SQLite — allowing users to create teams, manage stats, and simulate matches.",
       tech: ["Python", "SQLite", "Qt Designer"],
+      img: fantacyCricket, // ✅ no curly braces
     },
     {
       title: "Landing Page Clones",
-      desc: "Recreated responsive front pages of Amazon, Flipkart, and Zomato using HTML and CSS with cross-browser compatibility.",
+      desc: "Recreated responsive front pages of Amazon and Zomato using HTML and CSS with cross-browser compatibility.",
       tech: ["HTML", "CSS"],
+      img: landingpage, // ✅ no curly braces
     },
   ];
 
@@ -24,9 +27,9 @@ export default function Projects() {
             className="bg-[#0d1117] p-6 rounded-lg border border-gray-800 hover:border-red-500 transition"
           >
             <img
-              src="https://via.placeholder.com/400x250.png"
+              src={proj.img}
               alt={proj.title}
-              className="rounded-md mb-4"
+              className="rounded-md mb-4 w-full h-56 object-contain"
             />
             <h3 className="text-xl font-semibold text-white mb-2">
               {proj.title}
